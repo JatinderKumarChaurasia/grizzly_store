@@ -1,8 +1,6 @@
 <html>
     <head>
-        <style type="text/css">
-           
-        </style>
+        <link rel="stylesheet" href="styles/radio1.css" type="text/css">
         <script type="text/javascript" src="scripts/main.js"></script>
         <title>Grizzly Store</title>
         <link rel="stylesheet" href="styles/main.css" type="text/css">
@@ -68,11 +66,11 @@
             <div class="col-md-9 mx-3">
                     <div class="container my-2">
                         <div class="row mx-2">
-                            <div style="background-color: gray" class="col-md-4 col-sm-4 border-bottom">
-                                <button style="width: 100%;background: transparent;border: none" class="btn align-middle mt-1 p-2">PRODUCTS</h5>
-                                </div>
-                            <div class="col-md-4 col-sm-4 bg-light">
-                                <button style="width: 100%;background: transparent;border: none" class="btn align-middle mt-1 p-2">VENDORS</h5>
+                            <div onclick="btn1listener()" id="btn1" class="col-md-4 col-sm-4 ">
+                                <button  style="width: 100%;background: transparent;border: none" class="btn align-middle mt-1 bg-light">PRODUCTS</h5>
+                            </div>
+                            <div  onclick="btn2listener()" id="btn2" class="col-md-4 col-sm-4 ">
+                                <button style="width: 100%;background: transparent;border: none" class="btn align-middle mt-1  bg-light">VENDORS</h5>
                                 </div>
                             <div style="background-color: gainsboro" class="col-md-4 col-sm-4"></div>
 
@@ -109,33 +107,12 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-sm-1 col-md-1">
-                                <hr style="margin-top: 70px" class="mt-5">
-                                <ul class="mt-3" style="list-style: none;margin-top: 60px">
-                                    <li class="mt-4">
-                                        <button type="button clickOn" style="background-color: white;border: none"><i style="background-color: black;border-radius: 20px;color: white" class="material-icons">done</i></button>
-                                    </li>
-                                    <li class="mt-4">
-                                        <button type="button clickOn" style="background-color: white;border: none"><i style="background-color: white;border: 2px solid cadetblue;border-radius: 20px;color: white" class="material-icons">done</i></button>
-                                    </li>
-                                    <li class="mt-4">
-                                        <button type="button clickOn" style="background-color: white;border: none;"><i onclick="myClick()" ondblclick="myClickAgain()" style="background-color: black;border-radius: 20px;color: white;border: 2px solid gray" class="material-icons">done</i></button>
-                                    </li>
-                                    <li class="mt-3 ">
-                                        <button type="button clickOn" style="background-color: white;border: none"><i style="background-color: white;border-radius: 20px;color: white;border: 2px solid cadetblue" class="material-icons">done</i></button>
-                                    </li>
-                                    <li class="mt-3">
-                                        <button type="button clickOn" style="background-color: white;border: none"><i id="click1" style="background-color: white;border-radius: 20px;color: white;border: 2px solid cadetblue" class="material-icons">done</i></button>
-                                    </li>
-                                    <li class="mt-3">
-                                        <button type="button clickOn" style="background-color: white;border: none"><i style="background-color: white;border-radius: 20px;color: white;border: 2px solid cadetblue" class="material-icons">done</i></button>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-sm-11 col-md-11">
+                            
+                            <div class="col-sm-12 col-md-12">
                                                 <table class="table table mt-3">
                                                         <thead>
                                                                 <tr>
+                                                                    <th></th>
                                                                     <th>Products</th>
                                                                     <th>Brand</th>
                                                                     <th>Category</th>
@@ -145,6 +122,12 @@
                                                             </thead>
                                                             <tbody>
                                                                     <tr>
+                                                                            <td>
+                                                                                    <div class="round">
+                                                                                           <input type="checkbox" id="checkbox">
+                                                                                           <label for="checkbox"></label>
+                                                                                    </div>
+                                                                            </td>
                                                                             <td><h6>Trimmer</h6></td>
                                                                             <td><h6>Phillips</h6></td>
                                                                             <td><h6>Personal Care</h6></td>
@@ -161,6 +144,12 @@
                                                                             </td>
                                                                         </tr>
                                                                 <tr>
+                                                                        <td>
+                                                                                <div class="round">
+                                                                                       <input type="checkbox" id="checkbox5">
+                                                                                       <label for="checkbox5"></label>
+                                                                                </div>
+                                                                        </td>
                                                                         <td><h6>Trimmer</h6></td>
                                                                         <td><h6>Phillips</h6></td>
                                                                         <td><h6>Personal Care</h6></td>
@@ -177,6 +166,12 @@
                                                                         </td>
                                                                     </tr>
                                                                     <tr>
+                                                                            <td>
+                                                                                    <div class="round">
+                                                                                           <input type="checkbox" id="checkbox1">
+                                                                                           <label for="checkbox1"></label>
+                                                                                    </div>
+                                                                            </td>
                                                                             <td><h6>Trimmer</h6></td>
                                                                             <td><h6>Phillips</h6></td>
                                                                             <td><h6>Personal Care</h6></td>
@@ -193,6 +188,12 @@
                                                                             </td>
                                                                         </tr>
                                                                         <tr>
+                                                                                <td>
+                                                                                        <div class="round">
+                                                                                               <input type="checkbox" id="checkbox2">
+                                                                                               <label for="checkbox2"></label>
+                                                                                        </div>
+                                                                                </td>
                                                                                 <td><h6>Trimmer</h6></td>
                                                                                 <td><h6>Phillips</h6></td>
                                                                                 <td><h6>Personal Care</h6></td>
@@ -209,6 +210,12 @@
                                                                                 </td>
                                                                             </tr>
                                                                             <tr>
+                                                                                    <td>
+                                                                                            <div class="round">
+                                                                                                   <input type="checkbox" id="checkbox3">
+                                                                                                   <label for="checkbox3"></label>
+                                                                                            </div>
+                                                                                    </td>
                                                                                     <td><h6>Trimmer</h6></td>
                                                                                     <td><h6>Phillips</h6></td>
                                                                                     <td><h6>Personal Care</h6></td>
@@ -225,6 +232,12 @@
                                                                                     </td>
                                                                                 </tr>
                                                                                 <tr>
+                                                                                        <td>
+                                                                                                <div class="round">
+                                                                                                       <input type="checkbox" id="checkbox4">
+                                                                                                       <label for="checkbox4"></label>
+                                                                                                </div>
+                                                                                        </td>
                                                                                         <td><h6>Trimmer</h6></td>
                                                                                         <td><h6>Phillips</h6></td>
                                                                                         <td><h6>Personal Care</h6></td>
