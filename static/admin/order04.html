@@ -1,0 +1,270 @@
+<!--------------To Add Extra COlumn-->
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/radio1.css" type="text/css">
+        <script type="text/javascript" src="scripts/main.js"></script>
+        <title>Grizzly Store</title>
+        <link rel="stylesheet" href="styles/main.css" type="text/css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="d-flex flex-column mx-3 my-3 flex-md-row shadow-sm border-bottom bg-light">
+                <h5 class="my-2 mr-md-auto p-3">Grizzly <img style="width: 30px;height: 30px;" src="images/logo_grizzly.png">Store</h5>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-md-4"> 
+                        <div class="input-group mt-3" style="border-radius: 30px" >
+                            <input type="text" class="form-control" style="border: none;border-top-left-radius: 30px;border-bottom-left-radius: 30px" placeholder="Search" aria-describedby="search_item">
+                            <div class="input-group-append">
+                                <i style="border-top-right-radius: 30px;border-bottom-right-radius: 30px;" class="material-icons p-2 bg-white">search</i>
+                            </div>
+                        </div> 
+                            <!--<input style="width: 300px;float: left;border: 2px whitesmoke solid;border-radius: 15px;height: 10px;" type="search" placeholder="Search" class="p-3 my-3 mr-md-2">-->
+                    </div>
+                    <div class="col-sm-8 col-md-8">
+                        <div class="row">
+                            <div class="col-sm-5">
+                            </div>
+                            <div class="col-sm-1">
+                                <i class="material-icons my-4">notification_important</i>
+                            </div>
+                            <div class="col-sm-3">
+                                <p class="my-4">Welcome, Bill Jobs</p>
+                            </div>
+                            <div class="col-sm-3">
+                                    <button style="background-color: grey;border-radius: 30px;width: 100px" class="my-3 btn" type="button" value="logout">Logout</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 ml-4">
+                    <div class="card my-2 bg-light" style="height: 75%">
+                            <div class="card-body">
+                                <div class="shadow-sm  px-2" style="color: white;background-color: grey;height: 30px;overflow: hidden;">
+                                        <label>Profile</label>
+                                        <label style="float:right">Edit</label>
+                                </div>
+                                <br>
+                                <div class="card bg-light align-middle mx-4" style="width: 100px;height: 100px;align-items: center">
+                                        <div class="card-body"></div>
+                                </div>
+                                <h5 style="text-align: center">Bill Jobs</h5>
+                                <h6 style="text-align: center;text-decoration: white;">ID</h6>
+                                <h6 style="text-align: center;color: gray">99399339</h6>
+                                <h6 style="text-align: center;">Designation</h6>
+                                <h6 style="text-align: center;color: gray">Sr.Admin</h6>
+                                <h6 style="text-align: center;">Office</h6>
+                                <h6 style="text-align: center;color: gray">West California,U.S.A</h6>
+
+                            </div>
+                        </div>
+            </div>
+            <div class="col-md-9 mx-3">
+                    <div class="container my-2">
+                        <div class="row mx-2">
+                            <div onclick="btn1listener()" id="btn1" class="col-md-4 col-sm-4 ">
+                                <button  style="width: 100%;background: transparent;border: none" class="btn align-middle mt-1 bg-light">PRODUCTS</h5>
+                            </div>
+                            <div  onclick="btn2listener()" id="btn2" class="col-md-4 col-sm-4 ">
+                                <button style="width: 100%;background: transparent;border: none" class="btn align-middle mt-1  bg-light">VENDORS</h5>
+                                </div>
+                            <div style="background-color: gainsboro" class="col-md-4 col-sm-4"></div>
+
+                        </div>
+                        <div class="row mt-3 " >
+                            <div class="col-sm-3 col-md-3">
+                                <select class="px-3 bg-light shadow-sm" style="border-radius: 20px; background-color: transparent;border: none">
+                                    <option>Choose Action</option>
+                                    <option>Action A</option>
+                                    <option>Action B</option>
+                                    <option>Action C</option>
+                                    <option>Action D</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                    <div class="input-group px-3" style="border-radius: 30px;" >
+                                            <input type="text" class="form-control shadow-sm" style="border: none;height: 20px;border-top-left-radius: 30px;border-bottom-left-radius: 30px" placeholder="Search" aria-describedby="search_item">
+                                            <div class="input-group-append shadow-sm">
+                                                <i style="border-top-right-radius: 30px;border-bottom-right-radius: 30px;height: 20px;" class="material-icons bg-white">search</i>
+                                            </div>
+                                        </div> 
+                                  <!--  <input class="px-3" style="border-radius: 20px" placeholder="Category Name" class="input_style" type="search" name="search">-->
+                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                    <select class="px-3 bg-light shadow-sm" style="border-radius: 20px;background-color: transparent;border: none">
+                                            <option>Sort By</option>
+                                            <option>Ascending</option>
+                                            <option>Descending</option>
+                                            <option>Category</option>
+                                            <option>Brand</option>
+                                        </select>                            </div>
+                            <div class="col-sm-3 col-md-3">
+                                <button style="border-radius: 20px;width: 200px;background-color: gray">Add Product</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            
+                            <div class="col-sm-12 col-md-12">
+                                                <table class="table table mt-3">
+                                                        <thead>
+                                                                <tr>
+                                                                    <th></th>
+                                                                    <th>Products</th>
+                                                                    <th>Brand</th>
+                                                                    <th>Category</th>
+                                                                    <th>Ratings</th>
+                                                                    <th></th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                    <tr>
+                                                                            <td>
+                                                                                    <div class="round">
+                                                                                           <input type="checkbox" id="checkbox">
+                                                                                           <label for="checkbox"></label>
+                                                                                    </div>
+                                                                            </td>
+                                                                            <td><h6>Trimmer</h6></td>
+                                                                            <td><h6>Phillips</h6></td>
+                                                                            <td><h6>Personal Care</h6></td>
+                                                                            <td>4.5</td>
+                                                                            <td>
+                                                                                <div class="row">
+                                                                                    <div style="border-radius: 10px;text-align: center" class="col-md-3 bg-light">View</div>
+                                                                                    <div class="col-md-1"></div>
+                                                                                    <div style="border-radius: 10px;text-align: center" class="col-md-3 bg-light">Block</div>
+                                                                                    <div class="col-md-1"></div>
+                                                                                    <div style="border-radius: 10px;text-align: center" class="col-md-3 bg-light">Remove</div>
+                                                                                    <div class="col-md-1"></div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                <tr>
+                                                                        <td>
+                                                                                <div class="round">
+                                                                                       <input type="checkbox" id="checkbox5">
+                                                                                       <label for="checkbox5"></label>
+                                                                                </div>
+                                                                        </td>
+                                                                        <td><h6>Trimmer</h6></td>
+                                                                        <td><h6>Phillips</h6></td>
+                                                                        <td><h6>Personal Care</h6></td>
+                                                                        <td>4.5</td>
+                                                                        <td>
+                                                                            <div class="row">
+                                                                                <div style="border-radius: 10px;text-align: center" class="col-md-3 bg-light">View</div>
+                                                                                <div class="col-md-1"></div>
+                                                                                <div style="border-radius: 10px;text-align: center" class="col-md-3 bg-light">Block</div>
+                                                                                <div class="col-md-1"></div>
+                                                                                <div style="border-radius: 10px;text-align: center" class="col-md-3 bg-light">Remove</div>
+                                                                                <div class="col-md-1"></div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                            <td>
+                                                                                    <div class="round">
+                                                                                           <input type="checkbox" id="checkbox1">
+                                                                                           <label for="checkbox1"></label>
+                                                                                    </div>
+                                                                            </td>
+                                                                            <td><h6>Trimmer</h6></td>
+                                                                            <td><h6>Phillips</h6></td>
+                                                                            <td><h6>Personal Care</h6></td>
+                                                                            <td>4.5</td>
+                                                                            <td>
+                                                                                <div class="row">
+                                                                                    <div style="border-radius: 10px;text-align: center" class="col-md-3 bg-light">View</div>
+                                                                                    <div class="col-md-1"></div>
+                                                                                    <div style="border-radius: 10px;text-align: center" class="col-md-3 bg-light">Block</div>
+                                                                                    <div class="col-md-1"></div>
+                                                                                    <div style="border-radius: 10px;text-align: center" class="col-md-3 bg-light">Remove</div>
+                                                                                    <div class="col-md-1"></div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                                <td>
+                                                                                        <div class="round">
+                                                                                               <input type="checkbox" id="checkbox2">
+                                                                                               <label for="checkbox2"></label>
+                                                                                        </div>
+                                                                                </td>
+                                                                                <td><h6>Trimmer</h6></td>
+                                                                                <td><h6>Phillips</h6></td>
+                                                                                <td><h6>Personal Care</h6></td>
+                                                                                <td>4.5</td>
+                                                                                <td>
+                                                                                    <div class="row">
+                                                                                        <div style="border-radius: 10px;text-align: center" class="col-md-3 bg-light">View</div>
+                                                                                        <div class="col-md-1"></div>
+                                                                                        <div style="border-radius: 10px;text-align: center" class="col-md-3 bg-light">Block</div>
+                                                                                        <div class="col-md-1"></div>
+                                                                                        <div style="border-radius: 10px;text-align: center" class="col-md-3 bg-light">Remove</div>
+                                                                                        <div class="col-md-1"></div>
+                                                                                    </div>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                    <td>
+                                                                                            <div class="round">
+                                                                                                   <input type="checkbox" id="checkbox3">
+                                                                                                   <label for="checkbox3"></label>
+                                                                                            </div>
+                                                                                    </td>
+                                                                                    <td><h6>Trimmer</h6></td>
+                                                                                    <td><h6>Phillips</h6></td>
+                                                                                    <td><h6>Personal Care</h6></td>
+                                                                                    <td>4.5</td>
+                                                                                    <td>
+                                                                                        <div class="row">
+                                                                                            <div style="border-radius: 10px;text-align: center" class="col-md-3 bg-light">View</div>
+                                                                                            <div class="col-md-1"></div>
+                                                                                            <div style="border-radius: 10px;text-align: center" class="col-md-3 bg-light">Block</div>
+                                                                                            <div class="col-md-1"></div>
+                                                                                            <div style="border-radius: 10px;text-align: center" class="col-md-3 bg-light">Remove</div>
+                                                                                            <div class="col-md-1"></div>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                        <td>
+                                                                                                <div class="round">
+                                                                                                       <input type="checkbox" id="checkbox4">
+                                                                                                       <label for="checkbox4"></label>
+                                                                                                </div>
+                                                                                        </td>
+                                                                                        <td><h6>Trimmer</h6></td>
+                                                                                        <td><h6>Phillips</h6></td>
+                                                                                        <td><h6>Personal Care</h6></td>
+                                                                                        <td>4.5</td>
+                                                                                        <td>
+                                                                                            <div class="row">
+                                                                                                <div style="border-radius: 10px;text-align: center" class="col-md-3 bg-light">View</div>
+                                                                                                <div class="col-md-1"></div>
+                                                                                                <div style="border-radius: 10px;text-align: center" class="col-md-3 bg-light">Block</div>
+                                                                                                <div class="col-md-1"></div>
+                                                                                                <div style="border-radius: 10px;text-align: center" class="col-md-3 bg-light">Remove</div>
+                                                                                                <div class="col-md-1"></div>
+                                                                                            </div>
+                                                                                        </td>
+                                                                                    </tr>
+                                                            </tbody>
+                                                </table>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+       
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    </body>
+</html>
