@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Product View</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
+    <script src="scripts/main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="images/navlogo.PNG" width="250" height="45">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ml-5">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2 no-border" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn my-2 my-sm-0" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </ul>
+            <ul class="navbar-nav md-mr-auto">
+                <li class="nav-item nav-link mr-5">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-bell"></i>
+                    </a>
+                </li>
+                <li class="nav-item nav-link mr-3">
+                    <span class="navbar-text">
+                        Welcome, Admin {{admin.name}}
+                    </span>
+                </li>
+                <li class="nav-item nav-link">
+                    <button class="btn btn-rounded" href="#">Logout</button>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="card no-border">
+                    <div class="card-body p-0">
+                        <h5 class="card-title background-gray text-white px-2 py-1">PROFILE
+                            <span href="#" class="float-right">EDIT</span>
+                        </h5>
+                        <img class="no-border mx-auto d-block" src="http://i.pravatar.cc/150" width="100" alt="Card image cap">
+                        <span class="card-text text-center">
+                            <h4>Helen Cho</h4>
+                            <h4>ID</h4>
+                            <p>9819264</p>
+                            <h4>Designation</h4>
+                            <p>Sr. Admin</p>
+                            <h4>Office</h4>
+                            <p>NYC, NY, USA</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="row ">
+                    <div class="col-sm-8 p-0">
+                        <div class="btn-group btn-group-lg btn-block" role="group">
+                            <button type="button" class="btn background-gray active-border-btm text-left">PRODUCTS</button>
+                            <button type="button" class="btn background-gray text-left">VENDORS</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-2">
+                    <div class="col-sm-4">
+                        <h5>Trimmer
+                            <small> by Philips</small>
+                            <button class="btn btn-rounded text-white background-black" style="border-radius:50%;padding:1px 6px;min-width: 0px;">
+                                <i class="fas fa-pen"></i>
+                            </button>
+                        </h5>
+                        <span class="text-gray"><i class="fa fa-star text-lightgray"></i> 4.7</span>
+                    </div>
+                    <div class="col-sm-4">
+                        <h5>Product Description
+                            <button class="btn btn-rounded text-white background-black" style="border-radius:50%;padding:1px 6px;min-width: 0px;">
+                                <i class="fas fa-pen"></i>
+                            </button>
+                        </h5>
+                        <small>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                            ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                            sunt in culpa qui officia deserunt mollit anim id est laborum."</small>
+                        <br>
+                        <br>
+                        <br>
+                        <h4>RS XXXX/-
+                            <small>15% OFF</small>
+                            <button class="btn btn-rounded text-white background-black" style="border-radius:50%;padding:1px 6px;min-width: 0px;">
+                                <i class="fas fa-pen"></i>
+                            </button>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-1 align-self-end justify-content-end">
+                <!-- <div class="row align-self-end"> -->
+                <!-- <div class="col align-self-end"> -->
+                <div class="form-group text-right">
+                    <button class="btn no-border background-black btn-rounded text-white mb-2">Finish</button>
+                    <!-- <br><br> -->
+                    <button class="btn no-border background-gray btn-rounded">Cancel</button>
+                </div>
+                <!-- </div> -->
+                <!-- </div> -->
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
